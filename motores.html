@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cotización de Motores | ElectroHidráulica</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="LOGO.png">
+</head>
+
+<body>
+
+<!-- ================= MENÚ ================= -->
+
+<header>
+<div class="logo">
+    <a href="index.html">
+        <img src="LOGO.png" alt="ElectroHidráulica" class="logo-img">
+    </a>
+    <h2>ElectroHidráulica</h2>
+</div>
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Inicio</a></li>
+
+            <li><a href="bombas.html">Bombas</a></li>
+
+            <li><a href="tableros.html">Tableros</a></li>
+
+            <li><a href="motores.html">Motores</a></li>
+
+            <li><a href="informacion.html">Más información</a></li>
+
+            <li><a href="contacto.html">Contacto</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero-motor">
+
+    <div class="hero-contenido">
+
+        <i class="fas fa-gear icono"></i>
+
+        <h1>Motores Eléctricos</h1>
+
+        <p>
+
+            Cotización de motores monofásicos y trifásicos
+            para aplicaciones industriales y comerciales.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= INFORMACIÓN ================= -->
+
+<section>
+
+    <h2>Información del Producto</h2>
+
+    <div class="contenedor">
+
+        <div class="tarjeta">
+
+           <img src="LOGO.png"
+     alt="ElectroHidráulica"
+     style="display:block;
+            width:180px;
+            height:auto;
+            margin:0 auto 20px;">
+            <h3>Motores Eléctricos</h3>
+
+            <p>
+
+                Ofrecemos motores eléctricos monofásicos y trifásicos para
+                aplicaciones industriales, comerciales y residenciales.
+                Trabajamos con equipos de alta eficiencia energética y
+                diferentes capacidades para adaptarnos a las necesidades
+                de cada proyecto.
+
+            </p>
+
+            <ul style="text-align:left; margin-top:15px;">
+
+                <li>Monofásicos</li>
+
+                <li>Trifásicos</li>
+
+                <li>Alta eficiencia</li>
+
+                <li>Diferentes potencias</li>
+
+                <li>Aplicaciones industriales</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FORMULARIO ================= -->
+
+<section>
+
+    <h2>Solicitar Cotización</h2>
+
+    <p class="subtitulo">
+
+        Llena el formulario y a la brevedad posible se le enviara un correo electrónico o whatsapp.
+
+    </p>
+
+    <form id="cotizacionForm">
+
+        <input
+    type="text"
+    name="nombre"
+    placeholder="Nombre completo"
+    required>
+
+<input
+    type="email"
+    name="correo"
+    placeholder="Correo electrónico"
+    required>
+
+<input
+    type="tel"
+    name="telefono"
+    placeholder="Número telefónico">
+
+<input
+    type="text"
+    name="empresa"
+    placeholder="Empresa (Opcional)">
+
+<select name="tipo_motor">
+
+    <option>Seleccione el tipo de motor</option>
+
+    <option>Motor Monofásico</option>
+
+    <option>Motor Trifásico</option>
+
+    <option>Motor de Alta Eficiencia</option>
+
+    <option>Motor para Bomba</option>
+
+    <option>Otro</option>
+
+</select>
+
+<input
+    type="text"
+    name="potencia"
+    placeholder="Potencia (HP o kW)">
+
+<input
+    type="text"
+    name="voltaje"
+    placeholder="Voltaje requerido">
+
+<textarea
+    name="descripcion"
+    placeholder="Describa las características o especificaciones del motor que necesita."></textarea>
+
+<button type="button" onclick="enviarCorreo()">
+    Enviar Cotización
+</button>
+
+    </form>
+
+</section>
+
+<!-- ================= BENEFICIOS ================= -->
+
+<section class="ventajas">
+
+    <h2>¿Por qué elegir nuestros motores?</h2>
+
+    <div class="contenedor">
+
+        <div class="caja">
+
+            <i class="fas fa-bolt"></i>
+
+            <h3>Eficiencia</h3>
+
+            <p>
+
+                Motores diseñados para un menor consumo de energía.
+
+            </p>
+
+        </div>
+
+        <div class="caja">
+
+            <i class="fas fa-industry"></i>
+
+            <h3>Versatilidad</h3>
+
+            <p>
+
+                Soluciones para aplicaciones industriales, comerciales y residenciales.
+
+            </p>
+
+        </div>
+
+        <div class="caja">
+
+            <i class="fas fa-headset"></i>
+
+            <h3>Asesoría Técnica</h3>
+
+            <p>
+
+                Te ayudamos a seleccionar el motor adecuado para tu proyecto.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= BOTONES ================= -->
+
+<section style="text-align:center;">
+
+    <a
+        href="tableros.html"
+        class="boton">
+
+        ← Tableros
+
+    </a>
+
+    &nbsp;&nbsp;
+
+    <a
+        href="contacto.html"
+        class="boton">
+
+        Contacto →
+
+    </a>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-contenedor">
+
+        <div>
+
+            <h3>ElectroHidráulica</h3>
+
+            <p>
+
+                Especialistas en soluciones eléctricas e hidráulicas.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Contacto</h3>
+
+           <p>Teléfono: (667) 585-29-37</p>
+
+            <p>electrohidraulicaje32@gmail.com.com</p>
+            <p>Culiacán, Sinaloa</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copy">
+
+        © 2026 ElectroHidráulica
+
+    </p>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("zm1uDPsh8kiw9FO-e");
+
+function enviarCorreo() {
+
+    const formulario = document.getElementById("cotizacionForm");
+
+    emailjs.sendForm(
+        "service_tz879ol",
+        "template_jbap9ub",
+        formulario
+    )
+    .then(() => {
+        alert("✅ Enviado correctamente");
+        formulario.reset();
+    })
+    .catch((error) => {
+        console.log(error);
+        alert("❌ Error al enviar");
+    });
+
+}
+</script>
+</body>
+
+</html>

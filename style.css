@@ -1,0 +1,777 @@
+/* ===================================================
+   ELECTROHIDRÁULICA
+   Hoja de estilos principal
+=================================================== */
+
+/* ===== RESET ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#299dc0;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ===== HEADER ===== */
+/* ===== HEADER ===== */
+
+header{
+    background:#003366;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    min-height:100px;
+}
+
+/* Logo */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    flex-shrink:0;
+}
+
+/* Menú */
+nav{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    gap:45px;
+    width:100%;
+    max-width:900px;
+    margin:0;
+    padding:0;
+}
+
+nav ul li{
+    flex:1;
+    text-align:center;
+}
+
+nav a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:600;
+    padding:10px 0;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff9800;
+}
+/* ===== LOGO ===== */
+
+
+
+.logo a{
+    display:flex;
+    align-items:center;
+}
+
+.logo-img{
+    width:300px;      /* Antes 35px */
+    height:auto;
+    display:block;
+    object-fit:contain;
+}
+
+.logo h2{
+    color:white;
+    font-size:30px;
+    font-weight:700;
+    white-space:nowrap;
+}
+
+nav ul{
+
+    display:flex;
+    list-style:none;
+    gap:30px;
+
+}
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#ff9800;
+
+}
+
+/* ===== HERO ===== */
+
+.hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,40,80,.70),rgba(0,40,80,.70)),
+    url("../imagenes/fondo.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    padding:30px;
+
+}
+
+.hero-contenido{
+
+    max-width:800px;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+}
+
+/* ===== BOTONES ===== */
+
+.boton{
+
+    display:inline-block;
+
+    padding:15px 40px;
+
+    background:#ff9800;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    transition:.3s;
+
+    font-weight:bold;
+
+}
+
+.boton:hover{
+
+    background:#ffb84d;
+
+    transform:translateY(-5px);
+
+}
+
+.boton-tarjeta{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    text-decoration:none;
+
+    background:#003366;
+
+    color:white;
+
+    padding:12px 28px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.boton-tarjeta:hover{
+
+    background:#ff9800;
+
+}
+
+/* ===== SECCIONES ===== */
+
+section{
+
+    padding:90px 10%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    color:#003366;
+
+    font-size:38px;
+
+    margin-bottom:15px;
+
+}
+
+.subtitulo{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+    color:#003366;
+
+}
+
+/* ===== TARJETAS ===== */
+
+.contenedor{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.tarjeta{
+
+    width:340px;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+}
+
+.tarjeta:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.icono{
+
+    font-size:65px;
+
+    color:#ff9800;
+
+    margin-bottom:20px;
+
+}
+
+.tarjeta h3{
+
+    color:#003366;
+
+    margin-bottom:15px;
+
+}
+
+/* ===== NOSOTROS ===== */
+
+.nosotros{
+
+    background:white;
+
+}
+
+.texto{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.texto p{
+
+    margin-top:20px;
+
+    color:#555;
+
+}
+
+/* ===== VENTAJAS ===== */
+
+.ventajas{
+
+    background:#eef3f7;
+
+}
+
+.caja{
+
+    width:300px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.10);
+
+}
+
+.caja i{
+
+    font-size:50px;
+
+    color:#ff9800;
+
+    margin-bottom:20px;
+
+}
+
+.caja h3{
+
+    color:#003366;
+
+    margin-bottom:15px;
+
+}
+
+/* ===== CONTACTO RÁPIDO ===== */
+
+.contacto-rapido{
+
+    background:#003366;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.contacto-rapido h2{
+
+    color:white;
+
+}
+
+.contacto-rapido p{
+
+    margin:20px 0 35px;
+
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+
+    background:#111827;
+
+    color:white;
+
+    padding:50px 10%;
+
+}
+
+.footer-contenedor{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    flex-wrap:wrap;
+
+    gap:40px;
+
+}
+
+.footer-contenedor h3{
+
+    margin-bottom:15px;
+
+    color:#ff9800;
+
+}
+
+.footer-contenedor a{
+
+    color:white;
+
+    text-decoration:none;
+
+    line-height:2;
+
+}
+
+.footer-contenedor a:hover{
+
+    color:#ff9800;
+
+}
+
+footer hr{
+
+    margin:35px 0;
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.copy{
+
+    text-align:center;
+
+}
+
+/* ===== FORMULARIOS ===== */
+
+form{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+input,
+textarea,
+select{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    font-size:16px;
+
+    font-family:Poppins;
+
+}
+
+textarea{
+
+    resize:none;
+
+    height:180px;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    background:#003366;
+
+    color:white;
+
+    font-size:18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#ff9800;
+
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:900px){
+
+header{
+
+    flex-direction:column;
+
+}
+
+nav ul{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.footer-contenedor{
+
+    flex-direction:column;
+
+}
+
+}
+/* ===================================================
+   HERO TABLEROS
+=================================================== */
+
+.hero-tableros{
+
+
+    background:
+    linear-gradient(rgba(0,35,70,.55),rgba(0,35,70,.55)),
+    url("fondo-tablero.jpeg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color:#eef3f7;
+
+    height:100vh;
+
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+
+    padding-left:8%;
+
+    color:white;
+
+}
+
+.hero-bombas .hero-contenido{
+
+    max-width:600px;
+    text-align:left;
+
+}
+
+.hero-bombas h1{
+
+    font-size:60px;
+    color:white;
+    margin-bottom:20px;
+
+}
+
+.hero-bombas p{
+
+    font-size:22px;
+    color:white;
+    margin-bottom:30px;
+
+}
+
+.hero-bombas .icono{
+
+    font-size:70px;
+    color:#ff9800;
+    margin-bottom:20px;
+
+}
+/* ===================================================
+   HERO BOMBAS
+=================================================== */
+
+.hero-bombas{
+
+    background:
+    linear-gradient(rgba(0,35,70,.55),rgba(0,35,70,.55)),
+    url("bomba.jpg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color:#eef3f7;
+
+    height:100vh;
+
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+
+    padding-left:8%;
+
+    color:white;
+
+}
+
+.hero-bombas .hero-contenido{
+
+    max-width:600px;
+    text-align:left;
+
+}
+
+.hero-bombas h1{
+
+    font-size:60px;
+    color:white;
+    margin-bottom:20px;
+
+}
+
+.hero-bombas p{
+
+    font-size:22px;
+    color:white;
+    margin-bottom:30px;
+
+}
+
+.hero-bombas .icono{
+
+    font-size:70px;
+    color:#ff9800;
+    margin-bottom:20px;
+
+}
+.hero-motor{
+
+    background:
+    linear-gradient(rgba(0,35,70,.55),rgba(0,35,70,.55)),
+    url("motor.jpeg");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color:#eef3f7;
+
+    height:100vh;
+
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+
+    padding-left:8%;
+
+    color:white;
+
+}
+
+.hero-motor .hero-contenido{
+
+    max-width:600px;
+    text-align:left;
+
+}
+
+.hero-motor h1{
+
+    font-size:60px;
+    color:white;
+    margin-bottom:20px;
+
+}
+
+.hero-motor p{
+
+    font-size:22px;
+    color:white;
+    margin-bottom:30px;
+
+}
+
+.hero-motor .icono{
+
+    font-size:70px;
+    color:#ff9800;
+    margin-bottom:20px;
+
+}
+/* ===== BOTÓN WHATSAPP ===== */
+
+.boton-whatsapp{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+
+    width:fit-content;
+    margin:40px auto;
+
+    padding:18px 45px;
+
+    background:#25D366;
+    color:#fff;
+
+    font-size:24px;
+    font-weight:700;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(37,211,102,.35);
+}
+
+.boton-whatsapp i{
+    font-size:34px;
+}
+
+.boton-whatsapp:hover{
+    background:#1EBE5D;
+    transform:translateY(-4px) scale(1.03);
+    box-shadow:0 12px 28px rgba(37,211,102,.45);
+}

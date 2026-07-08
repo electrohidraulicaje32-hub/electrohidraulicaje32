@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cotización de Tableros | ElectroHidráulica</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="LOGO.png">
+</head>
+
+<body>
+
+<!-- ================= MENÚ ================= -->
+
+<header>
+<div class="logo">
+    <a href="index.html">
+        <img src="LOGO.png" alt="ElectroHidráulica" class="logo-img">
+    </a>
+    <h2>ElectroHidráulica</h2>
+</div>
+    <nav>
+
+        <ul>
+
+            <li><a href="index.html">Inicio</a></li>
+
+            <li><a href="bombas.html">Bombas</a></li>
+
+            <li><a href="tableros.html">Tableros</a></li>
+
+            <li><a href="motores.html">Motores</a></li>
+
+            <li><a href="informacion.html">Más información</a></li>
+
+            <li><a href="contacto.html">Contacto</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero-tableros">
+
+    <div class="hero-contenido">
+
+        <i class="fas fa-bolt icono"></i>
+
+        <h1>Tableros de Control Eléctrico</h1>
+
+        <p>
+
+            Diseñamos y cotizamos tableros eléctricos
+            para automatización y control industrial.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= INFORMACIÓN ================= -->
+
+<section>
+
+    <h2>Información del Servicio</h2>
+
+    <div class="contenedor">
+
+        <div class="tarjeta">
+
+           <img src="LOGO.png"
+     alt="ElectroHidráulica"
+     style="display:block;
+            width:180px;
+            height:auto;
+            margin:0 auto 20px;">
+            <h3>Tableros de Control</h3>
+
+            <p>
+
+                <!-- EDITA AQUÍ -->
+
+                Aquí puedes describir tu servicio de fabricación
+                y diseño de tableros eléctricos.
+
+            </p>
+
+            <ul style="text-align:left; margin-top:15px;">
+
+                <li>Arrancadores suaves</li>
+
+                <li>Tableros de bombeo</li>
+
+                <li>Control automático</li>
+
+                <li>Protecciones eléctricas</li>
+
+                <li>Diseños personalizados</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FORMULARIO ================= -->
+
+<section>
+
+    <h2>Solicitar Cotización</h2>
+
+    <p class="subtitulo">
+
+        Llena el formulario y a la brevedad posible se le enviara un correo electrónico o whatsapp.
+
+    </p>
+    
+ <form id="cotizacionForm">
+
+    <input type="text" name="nombre" placeholder="Nombre completo" required>
+
+    <input type="email" name="correo" placeholder="Correo electrónico" required>
+
+    <input type="tel" name="telefono" placeholder="Teléfono">
+
+    <input type="text" name="empresa" placeholder="Empresa (Opcional)">
+
+    <input type="text" name="tipo_tablero" placeholder="Tipo de tablero requerido">
+
+    <input type="text" name="voltaje" placeholder="Voltaje o capacidad">
+
+    <textarea name="proyecto" placeholder="Describe el proyecto o necesidad"></textarea>
+
+    <button type="submit">Enviar Cotización</button>
+
+</form>
+
+</section>
+
+<!-- ================= BENEFICIOS ================= -->
+
+<section class="ventajas">
+
+    <h2>Ventajas de nuestros tableros</h2>
+
+    <div class="contenedor">
+
+        <div class="caja">
+
+            <i class="fas fa-shield-alt"></i>
+
+            <h3>Seguridad</h3>
+
+            <p>Protección eléctrica garantizada en cada diseño.</p>
+
+        </div>
+
+        <div class="caja">
+
+            <i class="fas fa-cogs"></i>
+
+            <h3>Automatización</h3>
+
+            <p>Control inteligente para sistemas industriales.</p>
+
+        </div>
+
+        <div class="caja">
+
+            <i class="fas fa-clock"></i>
+
+            <h3>Rapidez</h3>
+
+            <p>Cotizaciones y entregas en tiempos reducidos.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= BOTONES ================= -->
+
+<section style="text-align:center;">
+
+    <a href="index.html" class="boton">← Inicio</a>
+
+    &nbsp;&nbsp;
+
+    <a href="motores.html" class="boton">Motores →</a>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-contenedor">
+
+        <div>
+
+            <h3>ElectroHidráulica</h3>
+
+            <p>Soluciones eléctricas e hidráulicas profesionales.</p>
+
+        </div>
+
+        <div>
+
+            <h3>Contacto</h3>
+
+           <p>Teléfono: (667) 585-29-37</p>
+
+            <p>electrohidraulicaje32@gmail.com.com</p>
+
+            <p>Culiacán, Sinaloa</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copy">© 2026 ElectroHidráulica</p>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+
+emailjs.init({
+    publicKey: "zm1uDPsh8kiw9FO-e"
+});
+
+const formulario = document.getElementById("cotizacionForm");
+
+formulario.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_tz879ol",
+        "template_9f6kwoq",
+        this
+    )
+    .then(function(){
+
+        alert("✅ Tu solicitud fue enviada correctamente. tu cotizacion sera enviada a travez del correo electronico y whatsapp.");
+
+        formulario.reset();
+
+    })
+    .catch(function(error){
+
+        console.error(error);
+
+        alert("❌ Ocurrió un error al enviar la cotización.");
+
+    });
+
+});
+
+</script>
+</body>
+</html>
