@@ -38,7 +38,7 @@
 
             <li><a href="bombas.html">Bombas</a></li>
 
-            <li><a href="tableros.html">Tableros</a></li>
+            <li><a href="tableros.html"class="activo">Tableros</a></li>
 
             <li><a href="motores.html">Motores</a></li>
 
@@ -83,7 +83,7 @@
 
         <div class="tarjeta">
 
-           <img src="LOGO.png"
+           <img src="tabb.jpg"
      alt="ElectroHidráulica"
      style="display:block;
             width:180px;
@@ -147,8 +147,11 @@
     <input type="text" name="voltaje" placeholder="Voltaje o capacidad">
 
     <textarea name="proyecto" placeholder="Describe el proyecto o necesidad"></textarea>
+<button type="submit" id="btnEnviar">
+    Enviar Cotización
+</button>
 
-    <button type="submit">Enviar Cotización</button>
+<p id="mensajeEstado" class="mensaje-estado"></p>
 
 </form>
 
@@ -228,7 +231,7 @@
 
            <p>Teléfono: (667) 585-29-37</p>
 
-            <p>electrohidraulicaje32@gmail.com.com</p>
+            <p>electrohidraulicaje32@gmail.com</p>
 
             <p>Culiacán, Sinaloa</p>
 
@@ -254,7 +257,14 @@ const formulario = document.getElementById("cotizacionForm");
 formulario.addEventListener("submit", function(e){
 
     e.preventDefault();
+const mensaje = document.getElementById("mensajeEstado");
+const boton = document.getElementById("btnEnviar");
 
+mensaje.className = "mensaje-estado mensaje-enviando";
+mensaje.textContent = "⏳ Enviando cotización...";
+
+boton.disabled = true;
+boton.textContent = "Enviando...";
     emailjs.sendForm(
         "service_tz879ol",
         "template_9f6kwoq",
@@ -262,8 +272,11 @@ formulario.addEventListener("submit", function(e){
     )
     .then(function(){
 
-        alert("✅ Tu solicitud fue enviada correctamente. tu cotizacion sera enviada a travez del correo electronico y whatsapp.");
+      mensaje.className = "mensaje-estado mensaje-exito";
+mensaje.textContent = "✅ Tu cotización fue enviada correctamente. Nos pondremos en contacto contigo.";
 
+boton.disabled = false;
+boton.textContent = "Enviar Cotización";
         formulario.reset();
 
     })
@@ -271,7 +284,11 @@ formulario.addEventListener("submit", function(e){
 
         console.error(error);
 
-        alert("❌ Ocurrió un error al enviar la cotización.");
+       mensaje.className = "mensaje-estado mensaje-error";
+mensaje.textContent = "❌ Ocurrió un error al enviar la cotización. Inténtalo nuevamente.";
+
+boton.disabled = false;
+boton.textContent = "Enviar Cotización";
 
     });
 

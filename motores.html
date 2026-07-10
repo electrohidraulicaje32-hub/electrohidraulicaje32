@@ -40,7 +40,7 @@
 
             <li><a href="tableros.html">Tableros</a></li>
 
-            <li><a href="motores.html">Motores</a></li>
+            <li><a href="motores.html"class="activo">Motores</a></li>
 
             <li><a href="informacion.html">Más información</a></li>
 
@@ -83,7 +83,7 @@
 
         <div class="tarjeta">
 
-           <img src="LOGO.png"
+           <img src="motores.jpeg"
      alt="ElectroHidráulica"
      style="display:block;
             width:180px;
@@ -187,9 +187,11 @@
     name="descripcion"
     placeholder="Describa las características o especificaciones del motor que necesita."></textarea>
 
-<button type="button" onclick="enviarCorreo()">
+<button type="submit" id="btnEnviar">
     Enviar Cotización
 </button>
+
+<p id="mensajeEstado" class="mensaje-estado"></p>
 
     </form>
 
@@ -297,7 +299,7 @@
 
            <p>Teléfono: (667) 585-29-37</p>
 
-            <p>electrohidraulicaje32@gmail.com.com</p>
+            <p>electrohidraulicaje32@gmail.com</p>
             <p>Culiacán, Sinaloa</p>
 
         </div>
@@ -313,32 +315,53 @@
     </p>
 
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
 emailjs.init("zm1uDPsh8kiw9FO-e");
+const formulario = document.getElementById("cotizacionForm");
 
-function enviarCorreo() {
+formulario.addEventListener("submit", function(e){
 
-    const formulario = document.getElementById("cotizacionForm");
+    e.preventDefault();
+const mensaje = document.getElementById("mensajeEstado");
+const boton = document.getElementById("btnEnviar");
 
+mensaje.className = "mensaje-estado mensaje-enviando";
+mensaje.textContent = "⏳ Enviando cotización...";
+
+boton.disabled = true;
+boton.textContent = "Enviando...";
     emailjs.sendForm(
         "service_tz879ol",
         "template_jbap9ub",
-        formulario
+        this
     )
-    .then(() => {
-        alert("✅ Enviado correctamente");
+    .then(function(){
+
+      mensaje.className = "mensaje-estado mensaje-exito";
+mensaje.textContent = "✅ Tu cotización fue enviada correctamente. Nos pondremos en contacto contigo.";
+
+boton.disabled = false;
+boton.textContent = "Enviar Cotización";
         formulario.reset();
+
     })
-    .catch((error) => {
-        console.log(error);
-        alert("❌ Error al enviar");
+    .catch(function(error){
+
+        console.error(error);
+
+       mensaje.className = "mensaje-estado mensaje-error";
+mensaje.textContent = "❌ Ocurrió un error al enviar la cotización. Inténtalo nuevamente.";
+
+boton.disabled = false;
+boton.textContent = "Enviar Cotización";
+
     });
 
-}
+});
 </script>
 </body>
 

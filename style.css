@@ -29,6 +29,9 @@ header{
     align-items:center;
     padding:18px 8%;
     min-height:100px;
+    position: sticky;
+top: 0;
+z-index: 1000;
 }
 
 /* Logo */
@@ -774,4 +777,39 @@ nav ul{
     background:#1EBE5D;
     transform:translateY(-4px) scale(1.03);
     box-shadow:0 12px 28px rgba(37,211,102,.45);
+}
+.activo{
+    color:#ff9800;
+    border-bottom:3px solid #ff9800;
+}
+.mensaje-estado{
+
+    margin-top:20px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    min-height:30px;
+
+}
+
+.mensaje-exito{
+
+    color:#e2e1d8;
+
+}
+
+.mensaje-error{
+
+    color:#dc3545;
+
+}
+
+.mensaje-enviando{
+
+    color:#003366;
+
 }
