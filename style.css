@@ -1652,35 +1652,45 @@ form{
 
 /* ================= HEADER ================= */
 
+/* ================= HEADER ================= */
+
 header{
 
-    flex-direction:column;
+    position:sticky;
+    top:0;
 
-    justify-content:center;
+    display:flex;
+    flex-direction:row;
 
-    padding:15px;
+    justify-content:space-between;
+    align-items:center;
 
-    gap:15px;
+    padding:12px 18px;
+
+    min-height:75px;
 
 }
 
 .logo{
 
-    flex-direction:column;
+    display:flex;
+    flex-direction:row;
 
-    text-align:center;
+    align-items:center;
+
+    gap:10px;
 
 }
 
 .logo-img{
 
-    width:85px;
+    width:55px;
 
 }
 
 .logo h2{
 
-    font-size:22px;
+    font-size:20px;
 
 }
 
@@ -1689,18 +1699,33 @@ header{
 nav{
 
     width:100%;
+    overflow-x:auto;
+
+    margin-top:10px;
+
+}
+
+nav::-webkit-scrollbar{
+
+    display:none;
 
 }
 
 nav ul{
 
-    width:100%;
+    display:flex;
 
-    display:grid;
+    flex-direction:row;
 
-    grid-template-columns:1fr;
+    gap:8px;
 
-    gap:10px;
+    width:max-content;
+
+}
+
+nav li{
+
+    flex:none;
 
 }
 
@@ -1708,15 +1733,11 @@ nav a{
 
     display:block;
 
-    width:100%;
+    white-space:nowrap;
 
-    text-align:center;
+    padding:10px 16px;
 
-    padding:14px;
-
-    font-size:16px;
-
-    border-radius:12px;
+    font-size:14px;
 
 }
 
