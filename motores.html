@@ -22,7 +22,6 @@
 <body>
 
 <!-- ================= MENÚ ================= -->
-
 <header>
 
 <div class="logo">
@@ -390,32 +389,12 @@ target="_blank">
 </a>
 <script>
 
-const boton=document.getElementById("menu-toggle");
-const menu=document.getElementById("menu");
+const boton = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
 
-boton.addEventListener("click",()=>{
+boton.addEventListener("click", function(){
 
-    menu.classList.toggle("activo");
-
-    boton.innerHTML=
-
-    menu.classList.contains("activo")
-
-    ? '<i class="fas fa-times"></i>'
-
-    : '<i class="fas fa-bars"></i>';
-
-});
-
-document.querySelectorAll("#menu a").forEach(link=>{
-
-link.onclick=()=>{
-
-menu.classList.remove("activo");
-
-boton.innerHTML='<i class="fas fa-bars"></i>';
-
-};
+    menu.classList.toggle("mostrar");
 
 });
 
