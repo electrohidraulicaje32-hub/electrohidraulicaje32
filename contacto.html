@@ -28,14 +28,18 @@
 <header>
 
 <div class="logo">
+
     <a href="index.html">
+
         <img src="LOGO.png" alt="ElectroHidráulica" class="logo-img">
+
     </a>
 
     <h2>ElectroHidráulica</h2>
+
 </div>
 
-<button class="menu-btn" id="menuBtn">
+<button class="menu-toggle" id="menu-toggle">
 
     <i class="fas fa-bars"></i>
 
@@ -45,17 +49,17 @@
 
     <ul>
 
-        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html">🏠 Inicio</a></li>
 
-        <li><a href="bombas.html">Bombas</a></li>
+        <li><a href="bombas.html">💧 Bombas</a></li>
 
-        <li><a href="tableros.html">Tableros</a></li>
+        <li><a href="tableros.html">⚡ Tableros</a></li>
 
-        <li><a href="motores.html">Motores</a></li>
+        <li><a href="motores.html">⚙️ Motores</a></li>
 
-        <li><a href="informacion.html">Más información</a></li>
+        <li><a href="informacion.html">ℹ️ Más información</a></li>
 
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="contacto.html">📞 Contacto</a></li>
 
     </ul>
 
@@ -312,12 +316,32 @@ target="_blank">
 </a>
 <script>
 
-const boton=document.getElementById("menuBtn");
+const boton=document.getElementById("menu-toggle");
 const menu=document.getElementById("menu");
 
 boton.addEventListener("click",()=>{
 
-menu.classList.toggle("mostrar");
+    menu.classList.toggle("activo");
+
+    boton.innerHTML=
+
+    menu.classList.contains("activo")
+
+    ? '<i class="fas fa-times"></i>'
+
+    : '<i class="fas fa-bars"></i>';
+
+});
+
+document.querySelectorAll("#menu a").forEach(link=>{
+
+link.onclick=()=>{
+
+menu.classList.remove("activo");
+
+boton.innerHTML='<i class="fas fa-bars"></i>';
+
+};
 
 });
 
