@@ -2158,7 +2158,159 @@ hr{
     margin:40px 0;
 
 }
+/*==================================
+MENU HAMBURGUESA
+==================================*/
 
+.menu-btn{
+
+display:none;
+
+background:none;
+
+border:none;
+
+color:white;
+
+font-size:30px;
+
+cursor:pointer;
+
+width:auto;
+
+padding:0;
+
+box-shadow:none;
+
+}
+
+/* SOLO CELULAR */
+
+@media(max-width:768px){
+
+header{
+
+display:flex;
+
+flex-direction:row;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:15px 20px;
+
+min-height:80px;
+
+}
+
+.logo{
+
+flex-direction:row;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.logo h2{
+
+font-size:20px;
+
+}
+
+.logo-img{
+
+width:55px;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+nav{
+
+position:absolute;
+
+top:80px;
+
+left:0;
+
+width:100%;
+
+background:#0A2540;
+
+display:none;
+
+padding:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+nav.mostrar{
+
+display:block;
+
+animation:menu .35s ease;
+
+}
+
+nav ul{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+nav li{
+
+width:100%;
+
+}
+
+nav a{
+
+display:block;
+
+text-align:center;
+
+padding:15px;
+
+border-radius:10px;
+
+background:rgba(255,255,255,.05);
+
+}
+
+}
+
+@keyframes menu{
+
+from{
+
+opacity:0;
+
+transform:translateY(-20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
 /* ===================================================
    FIN
 =================================================== */

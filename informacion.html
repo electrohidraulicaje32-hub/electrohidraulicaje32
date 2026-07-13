@@ -24,31 +24,40 @@
 <!-- ================= MENÚ ================= -->
 
 <header>
+
 <div class="logo">
     <a href="index.html">
         <img src="LOGO.png" alt="ElectroHidráulica" class="logo-img">
     </a>
+
     <h2>ElectroHidráulica</h2>
 </div>
-    <nav>
 
-        <ul>
+<button class="menu-btn" id="menuBtn">
 
-            <li><a href="index.html">Inicio</a></li>
+    <i class="fas fa-bars"></i>
 
-            <li><a href="bombas.html">Bombas</a></li>
+</button>
 
-            <li><a href="tableros.html">Tableros</a></li>
+<nav id="menu">
 
-            <li><a href="motores.html">Motores</a></li>
+    <ul>
 
-            <li><a href="informacion.html"class="activo">Más información</a></li>
+        <li><a href="index.html">Inicio</a></li>
 
-            <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="bombas.html">Bombas</a></li>
 
-        </ul>
+        <li><a href="tableros.html">Tableros</a></li>
 
-    </nav>
+        <li><a href="motores.html">Motores</a></li>
+
+        <li><a href="informacion.html">Más información</a></li>
+
+        <li><a href="contacto.html">Contacto</a></li>
+
+    </ul>
+
+</nav>
 
 </header>
 
@@ -338,6 +347,18 @@ target="_blank">
 <i class="fas fa-chevron-up"></i>
 
 </a>
+<script>
+
+const boton=document.getElementById("menuBtn");
+const menu=document.getElementById("menu");
+
+boton.addEventListener("click",()=>{
+
+menu.classList.toggle("mostrar");
+
+});
+
+</script>
 </body>
 
 </html>
